@@ -79,7 +79,7 @@ function MdCheckboxDirective(inputDirective, $mdInkRipple, $mdAria, $mdConstant,
     return function postLink(scope, element, attr, ngModelCtrl) {
       ngModelCtrl = ngModelCtrl || $mdUtil.fakeNgModel();
       var checked = false;
-      $mdTheming(element);
+      $mdTheming(tElement);
 
       $mdAria.expectWithText(tElement, 'aria-label');
 
